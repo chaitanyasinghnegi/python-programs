@@ -1,12 +1,18 @@
 """
 Simple Right-Facing Triangle 
 eg : 
-5
+
+9
+
 *
 * *
 * * * 
 * * * * 
 * * * * * 
+* * * * * *
+* * * * * * *
+* * * * * * * * 
+* * * * * * * * * 
 """
 #taking input from user - number of rows
 n=int(input())
@@ -24,12 +30,18 @@ for i in range(n):
 """ 
 Hollow
 eg : 
-5
+
+9
+
 *
 * * 
 *   * 
 *     * 
-* * * * *  
+*       *
+*         * 
+*           * 
+*             * 
+* * * * * * * * * 
 """
 #taking input from user - number of rows
 n=int(input())
@@ -51,12 +63,18 @@ for i in range(n):
 """
 Simple Right-Facing Upside Down Triangle 
 eg : 
-5
+
+9
+
+* * * * * * * * * 
+* * * * * * * * 
+* * * * * * * 
+* * * * * * 
 * * * * * 
 * * * * 
 * * * 
 * * 
-* 
+*
 """
 #taking input from user - number of rows
 n=int(input())
@@ -71,6 +89,22 @@ for i in range(n,0,-1):
 
 #====================================================================================================================================================================================================================================================================#
 
+"""
+Hollow
+eg :
+
+9
+
+* * * * * * * * * 
+*             * 
+*           * 
+*         *
+*       * 
+*     * 
+*   * 
+* * 
+*
+"""
 #taking input from user - number of rows
 n=int(input())
 #first loop for number of rows
@@ -90,12 +124,18 @@ for i in range(n,0,-1):
 """
 Simple Left-Facing Triangle
 eg : 
-5
-         *
-       * *
-     * * *
-   * * * *
- * * * * *
+
+9
+
+                 * 
+               * * 
+             * * * 
+           * * * *
+         * * * * * 
+       * * * * * *
+     * * * * * * * 
+   * * * * * * * *
+ * * * * * * * * * 
  """
 #taking input from use - number of rows
 n=int(input())
@@ -118,12 +158,18 @@ for i in range(1,n+1):
 """
 Hollow
 eg : 
-5
-         *
-       * *
-     *   *
-   *     *
- * * * * *
+
+9
+
+                 * 
+               * * 
+             *   * 
+           *     *
+         *       * 
+       *         *
+     *           * 
+   *             *
+ * * * * * * * * * 
 """
 #taking input from use - number of rows
 n=int(input())
@@ -149,12 +195,18 @@ for i in range(1,n+1):
 """
 Simple Left-Facing Upside Down Triangle
 eg :
-5
-* * * * *
-  * * * * 
-    * * * 
-      * *
-        *
+
+9
+
+* * * * * * * * *
+  * * * * * * * *
+    * * * * * * * 
+      * * * * * *
+        * * * * *
+          * * * *
+            * * *
+              * * 
+                * 
 """
 # Taking input from the user - number of rows
 n = int(input())
@@ -177,8 +229,18 @@ for i in range(n, 0, -1):
 """
 Hollow
 eg :
-5
 
+9
+
+* * * * * * * * *
+  *             *
+    *           * 
+      *         *
+        *       *
+          *     *
+            *   *
+              * * 
+                *
 """
 n = int(input())
 # First loop for the number of rows (reversed)
