@@ -19,7 +19,7 @@ To get started, clone this repository to your local machine:
 git clone https://github.com/your-username/python-learning-repo.git
 cd python-learning-repo
 
-##Contributing
+## Contributing
 
 Contributions are welcome! If you have a short, simple Python program that you believe would benefit learners, follow these steps:
 
