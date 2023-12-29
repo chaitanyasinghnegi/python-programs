@@ -2,7 +2,7 @@
 reading a text file
 """
 with open("text.txt",w) as file_object:
-  rd=file_object.reader()
+  rd=file_object.read()
 
 """
 reading a binary file 
