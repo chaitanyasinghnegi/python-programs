@@ -12,6 +12,22 @@ reading a binary file
         # Read the entire binary file into a bytes object
         binary_data = binary_file.read()
 
+Example for a binary code to read and display its contents:
+import struct
+
+# Write binary data to a file
+with open('binary_data.bin', 'wb') as binary_file:
+    binary_file.write(struct.pack('iid', 123, 45.67, 89.12))
+
+# Read binary data from the file
+with open('binary_data.bin', 'rb') as binary_file:
+    data = struct.unpack('iid', binary_file.read())
+
+# Display the data
+labels = ["Integer", "Float 1", "Float 2"]
+for label, value in zip(labels, data):
+    print(f"{label}: {value}")
+
 """
 reading a CSV File
 """
