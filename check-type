@@ -25,3 +25,30 @@ example- hello (olleh)  | False
 """
 
 _instring = input().strip()
+#=======================================================================================================================================================================================================================#
+Happy Number checker
+ A happy number is a number that, when you repeatedly replace it with the sum of the squares of its digits, eventually reaches the number 1.
+If a number becomes 1, it is a happy number. If the process of summing the squares of digits leads to an endless loop without reaching 1, the number is not a happy number.
+Example:- 19 is Happy Number,
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1          
+
+          def isHappyNumber(n):
+	st=set()
+	while (1):
+		n = numSquareSum(n)
+		if (n == 1):
+			return True
+		if n not in st:
+			return False
+		st.insert(n)
+
+
+
+
+if is_happy_number(number_to_check):
+    print(f"{number_to_check} is a happy number!")
+else:
+    print(f"{number_to_check} is not a happy number.")
